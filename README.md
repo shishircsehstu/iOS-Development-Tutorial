@@ -9,3 +9,4 @@
 4. Alamofire: https://codewithchris.com/alamofire/
 5. Alamofire: https://www.raywenderlich.com/6587213-alamofire-5-tutorial-for-ios-getting-started
 6. Alamofire: https://www.codementor.io/@ashishkakkad/how-to-use-alamofire-and-swiftyjson-with-swift-4or6su5oa
+7. NotificationCenter: https://stackoverflow.com/questions/30328452/how-to-pass-multiple-values-with-a-notification-in-swift
