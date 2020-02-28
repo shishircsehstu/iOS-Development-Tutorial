@@ -12,4 +12,5 @@
 7. NotificationCenter: https://stackoverflow.com/questions/30328452/how-to-pass-multiple-values-with-a-notification-in-swift
 # Custom Collection view
 1. Custom Collection view: https://itnext.io/programmatic-custom-collectionview-cell-subclass-in-swift-5-xcode-10-291f8d41fdb1
+2. Custom layout: https://github.com/rubygarage/collection-view-layouts
 
