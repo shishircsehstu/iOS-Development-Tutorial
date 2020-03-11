@@ -15,3 +15,14 @@
 2. Custom layout: https://github.com/rubygarage/collection-view-layouts
 3. Custom Coleection View: https://github.com/abdullahselek/ASCollectionView
 4. CollectionView Batch Update: https://gist.github.com/phongsakornp/4870b46a9ba4208e5ff0
+
+# Animation:
+
+        UIView.animate(withDuration: 0.4, animations: {
+            self.datePickerView.frame.origin.y = DEVICE_HEIGHT
+            self.datePickerViewColore.backgroundColor = .clear
+            
+        }) { (finish) in
+            self.datePickerViewColore.frame.origin.y = DEVICE_HEIGHT
+        }
+
