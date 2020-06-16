@@ -28,7 +28,7 @@
 # Settings options
 
 UIApplication.shared.open(URL(string: "App-prefs:Phone")!)
-On IOS 13
+## On IOS 13
 1. App-prefs:General&path=About
 2. App-prefs:AIRPLANE_MODE
 3. App-prefs:General&path=AUTOLOCK
