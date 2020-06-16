@@ -36,41 +36,41 @@ UIApplication.shared.open(URL(string: "App-prefs:Phone")!)
 5. prefs:root=General&path=USAGE/CELLULAR_USAGE
 6. prefs:root=Brightness
 7. prefs:root=Bluetooth
-prefs:root=General&path=DATE_AND_TIME
-prefs:root=FACETIME
-prefs:root=General
-prefs:root=General&path=Keyboard
-prefs:root=CASTLE
-prefs:root=CASTLE&path=STORAGE_AND_BACKUP
-prefs:root=General&path=INTERNATIONAL
-prefs:root=LOCATION_SERVICES
-prefs:root=ACCOUNT_SETTINGS
-prefs:root=MUSIC
-prefs:root=MUSIC&path=EQ
-prefs:root=MUSIC&path=VolumeLimit
-prefs:root=General&path=Network
-prefs:root=NIKE_PLUS_IPOD
-prefs:root=NOTES
-prefs:root=NOTIFICATIONS_ID
-prefs:root=Phone
-prefs:root=Photos
-prefs:root=General&path=ManagedConfigurationList
-prefs:root=General&path=Reset
-prefs:root=Sounds&path=Ringtone
-prefs:root=Safari
-prefs:root=General&path=Assistant
-prefs:root=Sounds
-prefs:root=General&path=SOFTWARE_UPDATE_LINK
-prefs:root=STORE
-prefs:root=TWITTER
-prefs:root=FACEBOOK
-prefs:root=General&path=USAGE prefs:root=VIDEO
-prefs:root=General&path=Network/VPN
-prefs:root=Wallpaper
-prefs:root=WIFI
-prefs:root=INTERNET_TETHERING
-prefs:root=Phone&path=Blocked
-prefs:root=DO_NOT_DISTURB
+8. prefs:root=General&path=DATE_AND_TIME
+9. prefs:root=FACETIME
+10. prefs:root=General
+11. prefs:root=General&path=Keyboard
+12. prefs:root=CASTLE
+13. prefs:root=CASTLE&path=STORAGE_AND_BACKUP
+14. prefs:root=General&path=INTERNATIONAL
+15. prefs:root=LOCATION_SERVICES
+16. prefs:root=ACCOUNT_SETTINGS
+17. prefs:root=MUSIC
+18. prefs:root=MUSIC&path=EQ
+19. prefs:root=MUSIC&path=VolumeLimit
+20. prefs:root=General&path=Network
+21. prefs:root=NIKE_PLUS_IPOD
+22. prefs:root=NOTES
+23. prefs:root=NOTIFICATIONS_ID
+24. prefs:root=Phone
+25. prefs:root=Photos
+26. prefs:root=General&path=ManagedConfigurationList
+27. prefs:root=General&path=Reset
+28. prefs:root=Sounds&path=Ringtone
+29. prefs:root=Safari
+30. prefs:root=General&path=Assistant
+31. prefs:root=Sounds
+32. prefs:root=General&path=SOFTWARE_UPDATE_LINK
+33. prefs:root=STORE
+34. prefs:root=TWITTER
+35. prefs:root=FACEBOOK
+36. prefs:root=General&path=USAGE prefs:root=VIDEO
+37. prefs:root=General&path=Network/VPN
+38. prefs:root=Wallpaper
+39. prefs:root=WIFI
+40. prefs:root=INTERNET_TETHERING
+41. prefs:root=Phone&path=Blocked
+42. prefs:root=DO_NOT_DISTURB
 
 On IOS 13
 App-prefs:General&path=About
