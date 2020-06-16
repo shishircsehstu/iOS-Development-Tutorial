@@ -29,13 +29,13 @@
 
 UIApplication.shared.open(URL(string: "App-prefs:Phone")!)
  
-prefs:root=General&path=About
-prefs:root=General&path=ACCESSIBILITY
-prefs:root=AIRPLANE_MODE
-prefs:root=General&path=AUTOLOCK
-prefs:root=General&path=USAGE/CELLULAR_USAGE
-prefs:root=Brightness
-prefs:root=Bluetooth
+1.prefs:root=General&path=About
+2.prefs:root=General&path=ACCESSIBILITY
+3. prefs:root=AIRPLANE_MODE
+4.prefs:root=General&path=AUTOLOCK
+5.prefs:root=General&path=USAGE/CELLULAR_USAGE
+6.prefs:root=Brightness
+7.prefs:root=Bluetooth
 prefs:root=General&path=DATE_AND_TIME
 prefs:root=FACETIME
 prefs:root=General
