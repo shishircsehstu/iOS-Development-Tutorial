@@ -26,5 +26,85 @@
             self.datePickerViewColore.frame.origin.y = DEVICE_HEIGHT
         }
 # Settings options
+
+UIApplication.shared.open(URL(string: "App-prefs:Phone")!)
+ 
+prefs:root=General&path=About
+prefs:root=General&path=ACCESSIBILITY
+prefs:root=AIRPLANE_MODE
+prefs:root=General&path=AUTOLOCK
+prefs:root=General&path=USAGE/CELLULAR_USAGE
+prefs:root=Brightness
+prefs:root=Bluetooth
+prefs:root=General&path=DATE_AND_TIME
+prefs:root=FACETIME
+prefs:root=General
+prefs:root=General&path=Keyboard
+prefs:root=CASTLE
+prefs:root=CASTLE&path=STORAGE_AND_BACKUP
+prefs:root=General&path=INTERNATIONAL
+prefs:root=LOCATION_SERVICES
+prefs:root=ACCOUNT_SETTINGS
+prefs:root=MUSIC
+prefs:root=MUSIC&path=EQ
+prefs:root=MUSIC&path=VolumeLimit
+prefs:root=General&path=Network
+prefs:root=NIKE_PLUS_IPOD
+prefs:root=NOTES
+prefs:root=NOTIFICATIONS_ID
+prefs:root=Phone
+prefs:root=Photos
+prefs:root=General&path=ManagedConfigurationList
+prefs:root=General&path=Reset
+prefs:root=Sounds&path=Ringtone
+prefs:root=Safari
+prefs:root=General&path=Assistant
+prefs:root=Sounds
+prefs:root=General&path=SOFTWARE_UPDATE_LINK
+prefs:root=STORE
+prefs:root=TWITTER
+prefs:root=FACEBOOK
+prefs:root=General&path=USAGE prefs:root=VIDEO
+prefs:root=General&path=Network/VPN
+prefs:root=Wallpaper
+prefs:root=WIFI
+prefs:root=INTERNET_TETHERING
+prefs:root=Phone&path=Blocked
+prefs:root=DO_NOT_DISTURB
+
+On IOS 13
+App-prefs:General&path=About
+App-prefs:AIRPLANE_MODE
+App-prefs:General&path=AUTOLOCK
+App-prefs:Bluetooth
+App-prefs:General&path=DATE_AND_TIME
+App-prefs:FACETIME
+App-prefs:General
+App-prefs:General&path=Keyboard
+App-prefs:CASTLE
+App-prefs:CASTLE&path=STORAGE_AND_BACKUP
+App-prefs:General&path=INTERNATIONAL
+App-prefs:MUSIC
+App-prefs:NOTES
+App-prefs:NOTIFICATIONS_ID
+App-prefs:Phone
+App-prefs:Photos
+App-prefs:General&path=ManagedConfigurationList
+App-prefs:General&path=Reset
+App-prefs:Sounds&path=Ringtone
+App-prefs:Sounds
+App-prefs:General&path=SOFTWARE_UPDATE_LINK
+App-prefs:STORE
+App-prefs:Wallpaper
+App-prefs:WIFI
+App-prefs:INTERNET_TETHERING
+App-prefs:DO_NOT_DISTURB
+
+Not tested
+
+App-prefs:TWITTER (??)
+
+App-prefs:FACEBOOK (??)
+App-prefs:NIKE_PLUS_IPOD (??)
 https://stackoverflow.com/questions/28152526/how-do-i-open-phone-settings-when-a-button-is-clicked
 
