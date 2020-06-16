@@ -25,4 +25,6 @@
         }) { (finish) in
             self.datePickerViewColore.frame.origin.y = DEVICE_HEIGHT
         }
+# Settings options
+https://stackoverflow.com/questions/28152526/how-do-i-open-phone-settings-when-a-button-is-clicked
 
