@@ -56,7 +56,7 @@ UIApplication.shared.open(URL(string: "App-prefs:Phone")!)
 25. App-prefs:INTERNET_TETHERING
 26. App-prefs:DO_NOT_DISTURB
 
-
+## iOS<13
 1. prefs:root=General&path=About
 2. prefs:root=General&path=ACCESSIBILITY
 3. prefs:root=AIRPLANE_MODE
