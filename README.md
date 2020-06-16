@@ -28,7 +28,35 @@
 # Settings options
 
 UIApplication.shared.open(URL(string: "App-prefs:Phone")!)
- 
+On IOS 13
+1. App-prefs:General&path=About
+2. App-prefs:AIRPLANE_MODE
+3. App-prefs:General&path=AUTOLOCK
+4. App-prefs:Bluetooth
+5. App-prefs:General&path=DATE_AND_TIME
+6. App-prefs:FACETIME
+7. App-prefs:General
+8. App-prefs:General&path=Keyboard
+9. App-prefs:CASTLE
+10. App-prefs:CASTLE&path=STORAGE_AND_BACKUP
+11. App-prefs:General&path=INTERNATIONAL
+12. App-prefs:MUSIC
+13. App-prefs:NOTES
+14. App-prefs:NOTIFICATIONS_ID
+15. App-prefs:Phone
+16. App-prefs:Photos
+17. App-prefs:General&path=ManagedConfigurationList
+18. App-prefs:General&path=Reset
+19. App-prefs:Sounds&path=Ringtone
+20. App-prefs:Sounds
+21. App-prefs:General&path=SOFTWARE_UPDATE_LINK
+22. App-prefs:STORE
+23. App-prefs:Wallpaper
+24. App-prefs:WIFI
+25. App-prefs:INTERNET_TETHERING
+26. App-prefs:DO_NOT_DISTURB
+
+
 1. prefs:root=General&path=About
 2. prefs:root=General&path=ACCESSIBILITY
 3. prefs:root=AIRPLANE_MODE
@@ -72,33 +100,6 @@ UIApplication.shared.open(URL(string: "App-prefs:Phone")!)
 41. prefs:root=Phone&path=Blocked
 42. prefs:root=DO_NOT_DISTURB
 
-On IOS 13
-App-prefs:General&path=About
-App-prefs:AIRPLANE_MODE
-App-prefs:General&path=AUTOLOCK
-App-prefs:Bluetooth
-App-prefs:General&path=DATE_AND_TIME
-App-prefs:FACETIME
-App-prefs:General
-App-prefs:General&path=Keyboard
-App-prefs:CASTLE
-App-prefs:CASTLE&path=STORAGE_AND_BACKUP
-App-prefs:General&path=INTERNATIONAL
-App-prefs:MUSIC
-App-prefs:NOTES
-App-prefs:NOTIFICATIONS_ID
-App-prefs:Phone
-App-prefs:Photos
-App-prefs:General&path=ManagedConfigurationList
-App-prefs:General&path=Reset
-App-prefs:Sounds&path=Ringtone
-App-prefs:Sounds
-App-prefs:General&path=SOFTWARE_UPDATE_LINK
-App-prefs:STORE
-App-prefs:Wallpaper
-App-prefs:WIFI
-App-prefs:INTERNET_TETHERING
-App-prefs:DO_NOT_DISTURB
 
 Not tested
 
