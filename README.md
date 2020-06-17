@@ -26,30 +26,28 @@
             self.datePickerViewColore.frame.origin.y = DEVICE_HEIGHT
         }
 ## Loop Animation
-func startAnimation()
+ 
+    func startAnimation()
     {
         UIView.animate(withDuration: 2.0, delay: 0, options: [.repeat, .autoreverse], animations: {
 
-           // self.animationView.frame = CGRect(x: 150, y: 220, width: animationView.l, height: 100)
+           // self.animationView.frame = CGRect(x: 150, y: 220, width: 100, height: 100)
             self.animationView.backgroundColor = .red
             self.animationView.layer.cornerRadius = self.animationView.frame.size.height/2
 
         }, completion: { (finished: Bool) -> Void in
             print("test")
-
-            
         })
     }
 
     @IBAction func startAction(_ sender: Any) {
         startAnimation()
-        //
-        
     }
     @IBAction func stopAction(_ sender: Any) {
         animationView.layer.removeAllAnimations()
-        
     }
+}
+
 # Settings options
 
 UIApplication.shared.open(URL(string: "App-prefs:Phone")!)
