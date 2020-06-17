@@ -46,7 +46,6 @@
     @IBAction func stopAction(_ sender: Any) {
         animationView.layer.removeAllAnimations()
     }
-}
 
 # Settings options
 
