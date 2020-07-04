@@ -47,6 +47,16 @@
         animationView.layer.removeAllAnimations()
     }
 
+
+# Notification
+
+      NotificationCenter.default.post(name: Notification.Name("RELOAD_COLLECTION_VIEW"), object: nil, userInfo: nil)
+      
+       NotificationCenter.default.addObserver(self, selector: #selector(reloadCollectonView), name: NSNotification.Name(rawValue: "RELOAD_COLLECTION_VIEW"), object: nil)
+          @objc func reloadCollectonView(){
+          }
+       
+      
 # Settings options
 
 UIApplication.shared.open(URL(string: "App-prefs:Phone")!)
