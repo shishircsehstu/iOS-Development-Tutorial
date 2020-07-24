@@ -64,12 +64,55 @@
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
         self.navigationController?.navigationBar.topItem?.backBarButtonItem?.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Poppins-Regular", size: 18)!], for: .normal)
         
-## Get Selected cell from button on Collection view cell
+# Get Selected cell from button on Collection view cell
 
+### UICollectionViewCell
 protocol cellDelegate {
     func sendInfo()
-    func deselectDetection(cellButton: UIButton)
-}
+    func deselectDetection(cellButton: UIButton
+ }
+
+class DuplicateCollectionViewCell: UICollectionViewCell {
+    
+    @IBOutlet weak var tickButton: UIButton!{  //clecked button
+        didSet{
+            
+            self.tickButton.addTarget(self, action: #selector(ticButtonAction(_:)), for: .touchDragInside)
+        }
+    }
+    @IBOutlet weak var dupImages: UIImageView!
+    
+    
+    var tickOrnot = 0
+    var delegate: cellDelegate!
+    
+    var arrayIn = Int()
+    var valueIn = Int()
+    var deleteAsset = PHAsset()
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        dupImages.layer.cornerRadius = 9
+        
+        
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        self.dupImages.image = nil
+    }
+    
+    
+    @objc private func ticButtonAction(_ sender: UIButton) {
+        
+        
+        if self.delegate != nil{
+            self.delegate.deselectDetection(cellButton: sender)
+        }
+        
+    }}
 
 # Settings options
 
