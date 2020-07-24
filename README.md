@@ -114,6 +114,38 @@ class DuplicateCollectionViewCell: UICollectionViewCell {
         
     }}
 
+### Your VC
+
+
+
+
+
+   func deselectDetection(cellButton: UIButton) {
+   
+   
+   
+        guard let cell = cellButton.superview?.superview as? DuplicateCollectionViewCell else {
+            return // or fatalError() or whatever
+        }
+        
+        
+        if let indexPath = myCollectionView.indexPath(for: cell){
+            if index == 0{
+                if deselectedIndexPathArray.contains(indexPath){
+                    if let index = deselectedIndexPathArray.firstIndex(of: indexPath){
+                        
+                        cell.tickButton.setImage(UIImage(named: "tick_dis"), for: .normal)
+                        cell.backgroundColor = .white
+                        deselectedIndexPathArray.remove(at: index)
+                    }
+                }
+                else{
+                    cell.tickButton.setImage(UIImage(named: "tick"), for: .normal)
+                    cell.backgroundColor = UIColor(displayP3Red: 24/255, green: 176/255, blue: 245/255, alpha: 1)
+                    deselectedIndexPathArray.append(indexPath)
+                }
+            }}
+
 # Settings options
 
 UIApplication.shared.open(URL(string: "App-prefs:Phone")!)
