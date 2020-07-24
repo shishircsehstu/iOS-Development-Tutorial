@@ -67,7 +67,11 @@
 # Get Selected cell from button on Collection view cell
 
 ### UICollectionViewCell
+
 protocol cellDelegate {
+
+
+
     func sendInfo()
     func deselectDetection(cellButton: UIButton
  }
