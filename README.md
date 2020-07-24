@@ -63,7 +63,9 @@
              UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Poppins-Regular", size: 18)!], for: .normal)
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
         self.navigationController?.navigationBar.topItem?.backBarButtonItem?.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Poppins-Regular", size: 18)!], for: .normal)
-      
+        
+## Get Selected cell from button on Collection view cell
+
 # Settings options
 
 UIApplication.shared.open(URL(string: "App-prefs:Phone")!)
