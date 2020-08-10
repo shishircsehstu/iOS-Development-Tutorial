@@ -151,7 +151,7 @@ class DuplicateCollectionViewCell: UICollectionViewCell {
             }}
 
 
-#Json parsing 
+# Json parsing 
 
 struct details: Decodable {
     var name: String
