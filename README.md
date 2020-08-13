@@ -231,7 +231,7 @@ class ViewController: UIViewController {
 }
 
 # Data Source and Delegat
-
+- In the MVC
 
 # Settings options
 
