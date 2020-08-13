@@ -231,7 +231,8 @@ class ViewController: UIViewController {
 }
 
 # Data Source and Delegat
-- In the MVC
+- In the MVC  datasource is in the model layer and the delegate is in the control layer.
+The datasource supplies the data, the delegate supplies the behavior.
 
 # Settings options
 
