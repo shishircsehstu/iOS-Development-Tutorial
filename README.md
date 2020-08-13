@@ -230,6 +230,9 @@ class ViewController: UIViewController {
     }
 }
 
+# Data Source and Delegat
+
+
 # Settings options
 
 UIApplication.shared.open(URL(string: "App-prefs:Phone")!)
