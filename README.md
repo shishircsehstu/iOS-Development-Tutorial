@@ -233,7 +233,10 @@ class ViewController: UIViewController {
 # Data Source and Delegat
 - In the MVC  datasource is in the model layer and the delegate is in the control layer.
 The datasource supplies the data, the delegate supplies the behavior.
-
+- Delegate relates to the UI and User actions against the cells and table
+common methods: willSelectRow, didSelectRow, willDisplay, heightForRow, willBeginEditingAt
+- Data Source deals with the editing, population and displaying of data on the tableview.
+common methods canEditRowAt, commit, titleForHeaderInSection, cellForRowAt, numberOfSections, sectionIndexTitles
 # Settings options
 
 UIApplication.shared.open(URL(string: "App-prefs:Phone")!)
