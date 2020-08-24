@@ -230,6 +230,62 @@ class ViewController: UIViewController {
     }
 }
 
+# Set right bar button and set large nav bar 
+
+func setupNavBar() {
+        
+        // let searchController = UISearchController(searchResultsController: nil)
+        // self.navigationItem.searchController = searchController
+        
+        let rightButton = UIButton()
+        rightButton.setImage(UIImage(named: "plusAdd"), for: .normal)
+        
+        //rightButton.setTitleColor(.purple, for: .normal)
+        
+        rightButton.addTarget(self, action: #selector(addBlockAction(_:)), for: .touchUpInside)
+        navigationController?.navigationBar.addSubview(rightButton)
+        rightButton.tag = 1
+        rightButton.frame = CGRect(x: self.view.frame.width, y: 0 , width: 50, height: 50)
+        
+        let targetView = self.navigationController?.navigationBar
+        
+        let trailingContraint = NSLayoutConstraint(item: rightButton, attribute:
+            .trailingMargin, relatedBy: .equal, toItem: targetView,
+                             attribute: .trailingMargin, multiplier: 1.0, constant: -16)
+        let bottomConstraint = NSLayoutConstraint(item: rightButton, attribute: .bottom, relatedBy: .equal,
+                                                  toItem: targetView, attribute: .bottom, multiplier: 1.0, constant: -6)
+        
+        rightButton.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([trailingContraint, bottomConstraint])
+        
+        
+        
+        self.navigationController?.navigationBar.isTranslucent = true
+        
+        self.navigationController?.navigationBar.barTintColor = VIEW_BG_COLOR
+        
+        navigationItem.title = "Blacklist"
+        
+        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
+        
+        
+        navigationController?.navigationBar.largeTitleTextAttributes =
+            [NSAttributedString.Key.foregroundColor: UIColor(displayP3Red: 255/255, green: 255/255, blue: 255/255, alpha: 1),
+             
+             NSAttributedString.Key.font: UIFont(name: "Poppins-Medium", size: 30) ??
+                UIFont.systemFont(ofSize: 30)]
+        
+        
+        if #available(iOS 11.0, *) {
+            navigationController?.navigationBar.prefersLargeTitles = true
+            navigationController?.navigationItem.largeTitleDisplayMode = .automatic
+        }
+        
+        
+        
+    }
+
 # Data Source and Delegat
 - In the MVC  datasource is in the model layer and the delegate is in the control layer.
 The datasource supplies the data, the delegate supplies the behavior.
