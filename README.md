@@ -295,7 +295,8 @@ common methods: willSelectRow, didSelectRow, willDisplay, heightForRow, willBegi
 common methods canEditRowAt, commit, titleForHeaderInSection, cellForRowAt, numberOfSections, sectionIndexTitles
 
 # Hide keyboard when tap to view
- func setupToHideKeyboardOnTapOnView()
+   
+    func setupToHideKeyboardOnTapOnView()
       {
           let tap: UITapGestureRecognizer = UITapGestureRecognizer(
               target: self,
@@ -304,9 +305,15 @@ common methods canEditRowAt, commit, titleForHeaderInSection, cellForRowAt, numb
           tap.cancelsTouchesInView = true
           view.addGestureRecognizer(tap)
       }
+      
+      @objc func dismissKeyboard()
+      {
+          view.endEditing(true)
+      }
 ## PLace holder attribute
 
-   func setPlaceHolderColor()
+   
+    func setPlaceHolderColor()
      {
         
         numTextField.attributedPlaceholder = NSAttributedString(string: "Enter number",
@@ -317,6 +324,8 @@ common methods canEditRowAt, commit, titleForHeaderInSection, cellForRowAt, numb
         
         
      }
+    
+       
 # Settings options
 
 UIApplication.shared.open(URL(string: "App-prefs:Phone")!)
