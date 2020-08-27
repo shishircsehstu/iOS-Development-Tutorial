@@ -293,6 +293,30 @@ The datasource supplies the data, the delegate supplies the behavior.
 common methods: willSelectRow, didSelectRow, willDisplay, heightForRow, willBeginEditingAt
 - Data Source deals with the editing, population and displaying of data on the tableview.
 common methods canEditRowAt, commit, titleForHeaderInSection, cellForRowAt, numberOfSections, sectionIndexTitles
+
+# Hide keyboard when tap to view
+ func setupToHideKeyboardOnTapOnView()
+      {
+          let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+              target: self,
+              action: #selector(dismissKeyboard))
+          
+          tap.cancelsTouchesInView = true
+          view.addGestureRecognizer(tap)
+      }
+## PLace holder attribute
+
+   func setPlaceHolderColor()
+     {
+        
+        numTextField.attributedPlaceholder = NSAttributedString(string: "Enter number",
+                                                                         attributes: [NSAttributedString.Key.foregroundColor: place_color])
+             
+                numTextField.font = UIFont(name: "Poppins-Regular", size: 13)!
+        
+        
+        
+     }
 # Settings options
 
 UIApplication.shared.open(URL(string: "App-prefs:Phone")!)
