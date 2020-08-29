@@ -325,7 +325,341 @@ common methods canEditRowAt, commit, titleForHeaderInSection, cellForRowAt, numb
         
      }
     
-       
+# Country Code and Calling Code
+
+func initCountyCode()
+    {
+        
+       //let locale = Locale.current
+       // print(locale.regionCode!)
+        
+        CountryCode.append("AF")
+        CountryCode.append("AL")
+        CountryCode.append("DZ")
+        CountryCode.append("AS")
+        CountryCode.append("AD")
+        
+        CountryCode.append("AO")
+        CountryCode.append("AI")
+        CountryCode.append("AG")
+        CountryCode.append("AR")
+        CountryCode.append("AM")
+        CountryCode.append("AW")
+        CountryCode.append("AU")
+        CountryCode.append("AT")
+        CountryCode.append("AZ")
+        CountryCode.append("BS")
+        CountryCode.append("BH")
+        CountryCode.append("BD")
+        CountryCode.append("BB")
+        
+        CountryCode.append("BY")
+        CountryCode.append("BE")
+        CountryCode.append("BZ")
+        CountryCode.append("BJ")
+        
+        CountryCode.append("BM")
+        CountryCode.append("BT")
+        CountryCode.append("BA")
+        CountryCode.append("BW")
+        
+        
+        CountryCode.append("BR")
+        CountryCode.append("IO")
+        CountryCode.append("BG")
+        CountryCode.append("BF")
+        
+        
+        
+        CountryCode.append("BI")
+        CountryCode.append("KH")
+        CountryCode.append("CM")
+        CountryCode.append("CA")
+        
+        
+        CountryCode.append("CV")
+        CountryCode.append("KY")
+        CountryCode.append("CF")
+        CountryCode.append("TD")
+        
+        
+        CountryCode.append("CL")
+        CountryCode.append("CN")
+        CountryCode.append("CX")
+        CountryCode.append("CO")
+        
+        CountryCode.append("KM")
+        CountryCode.append("CG")
+        CountryCode.append("CK")
+        CountryCode.append("CR")
+        
+        
+        CountryCode.append("HR")
+        CountryCode.append("CU")
+        CountryCode.append("CY")
+        CountryCode.append("CZ")
+        
+        CountryCode.append("DK")
+        CountryCode.append("DJ")
+        CountryCode.append("DM")
+        CountryCode.append("DO")
+        
+        CountryCode.append("EC")
+        CountryCode.append("EG")
+        CountryCode.append("SV")
+        CountryCode.append("GQ")
+        
+        CountryCode.append("ER")
+        CountryCode.append("EE")
+        CountryCode.append("ET")
+        CountryCode.append("FO")
+        
+        CountryCode.append("FJ")
+        CountryCode.append("FI")
+        CountryCode.append("FR")
+        CountryCode.append("GF")
+        
+        
+        CountryCode.append("PF")
+        CountryCode.append("GA")
+        CountryCode.append("GM")
+        CountryCode.append("GE")
+        
+        CountryCode.append("DE")
+        CountryCode.append("GH")
+        CountryCode.append("GI")
+        CountryCode.append("GR")
+        
+        CountryCode.append("GL")
+        CountryCode.append("GD")
+        CountryCode.append("GP")
+        CountryCode.append("GU")
+        
+        CountryCode.append("GT")
+        CountryCode.append("GN")
+        CountryCode.append("GW")
+        CountryCode.append("GY")
+        
+        
+        CountryCode.append("HT")
+        CountryCode.append("HN")
+        CountryCode.append("HU")
+        CountryCode.append("IS")
+        
+        CountryCode.append("IN")
+        CountryCode.append("ID")
+        CountryCode.append("IQ")
+        CountryCode.append("IE")
+        
+        CountryCode.append("IL")
+        CountryCode.append("IT")
+        CountryCode.append("JM")
+        CountryCode.append("JP")
+        
+        
+        CountryCode.append("JO")
+        CountryCode.append("KZ")
+        CountryCode.append("KE")
+        CountryCode.append("KI")
+        
+        
+        
+        CountryCode.append("KW")
+        CountryCode.append("KG")
+        CountryCode.append("LV")
+        CountryCode.append("LB")
+        
+        CountryCode.append("LS")
+        CountryCode.append("LR")
+        CountryCode.append("LI")
+        CountryCode.append("LT")
+        
+        CountryCode.append("LU")
+        CountryCode.append("MG")
+        CountryCode.append("MW")
+        CountryCode.append("MY")
+        
+        CountryCode.append("MV")
+        CountryCode.append("ML")
+        CountryCode.append("MT")
+        CountryCode.append("MH")
+        
+        CountryCode.append("MQ")
+        CountryCode.append("MR")
+        CountryCode.append("MU")
+        CountryCode.append("YT")
+        
+        
+        
+        CountryCode.append("MX")
+        CountryCode.append("MC")
+        CountryCode.append("MN")
+        CountryCode.append("ME")
+        
+        CountryCode.append("MS")
+        CountryCode.append("MA")
+        CountryCode.append("MM")
+        CountryCode.append("NA")
+        
+        CountryCode.append("NR")
+        CountryCode.append("NP")
+        CountryCode.append("NL")
+        CountryCode.append("AN")
+        
+        CountryCode.append("NC")
+        CountryCode.append("NZ")
+        CountryCode.append("NI")
+        CountryCode.append("NE")
+        
+        
+        CountryCode.append("NG")
+        CountryCode.append("NU")
+        CountryCode.append("NF")
+        CountryCode.append("MP")
+        
+        CountryCode.append("NO")
+        CountryCode.append("OM")
+        CountryCode.append("PK")
+        CountryCode.append("PW")
+        
+        
+        CountryCode.append("PA")
+        CountryCode.append("PG")
+        CountryCode.append("PY")
+        CountryCode.append("PE")
+        
+        
+        CountryCode.append("PH")
+        CountryCode.append("PL")
+        CountryCode.append("PT")
+        CountryCode.append("PR")
+        
+        CountryCode.append("QA")
+        CountryCode.append("RO")
+        CountryCode.append("RW")
+        CountryCode.append("WS")
+        
+        CountryCode.append("SM")
+        CountryCode.append("SA")
+        CountryCode.append("SN")
+        CountryCode.append("RS")
+        
+        CountryCode.append("SC")
+        CountryCode.append("SL")
+        CountryCode.append("SG")
+        CountryCode.append("SK")
+        
+        CountryCode.append("SI")
+        CountryCode.append("SB")
+        CountryCode.append("ZA")
+        CountryCode.append("GS")
+        
+        CountryCode.append("ES")
+        CountryCode.append("LK")
+        CountryCode.append("SD")
+        CountryCode.append("SR")
+        
+        
+        CountryCode.append("SZ")
+        CountryCode.append("SE")
+        CountryCode.append("CH")
+        CountryCode.append("TJ")
+        
+        CountryCode.append("TH")
+        CountryCode.append("TG")
+        CountryCode.append("TK")
+        CountryCode.append("TO")
+        CountryCode.append("TT")
+        CountryCode.append("TN")
+        CountryCode.append("TR")
+        CountryCode.append("TM")
+        
+        CountryCode.append("TC")
+        CountryCode.append("TV")
+        CountryCode.append("UG")
+        CountryCode.append("UA")
+        
+        
+        
+        CountryCode.append("AE")
+        CountryCode.append("GB")
+        CountryCode.append("US")
+        CountryCode.append("UY")
+        
+        CountryCode.append("UZ")
+        CountryCode.append("VU")
+        CountryCode.append("WF")
+        CountryCode.append("YE")
+        
+        CountryCode.append("ZM")
+        CountryCode.append("ZW")
+        CountryCode.append("BO")
+        CountryCode.append("BN")
+        
+        
+        CountryCode.append("CC")
+        CountryCode.append("CD")
+        CountryCode.append("CI")
+        CountryCode.append("FK")
+        
+        
+        CountryCode.append("GG")
+        CountryCode.append("VA")
+        CountryCode.append("HK")
+        CountryCode.append("IR")
+        
+        CountryCode.append("IM")
+        CountryCode.append("JE")
+        CountryCode.append("KP")
+        CountryCode.append("KR")
+        
+        
+        CountryCode.append("LA")
+        CountryCode.append("LY")
+        CountryCode.append("MO")
+        CountryCode.append("MK")
+        
+        CountryCode.append("FM")
+        CountryCode.append("MD")
+        CountryCode.append("MZ")
+        CountryCode.append("PS")
+        
+        CountryCode.append("PN")
+        CountryCode.append("RE")
+        CountryCode.append("RU")
+        CountryCode.append("BL")
+        
+        CountryCode.append("SH")
+        CountryCode.append("KN")
+        CountryCode.append("LC")
+        CountryCode.append("MF")
+        
+        CountryCode.append("PM")
+        CountryCode.append("VC")
+        CountryCode.append("ST")
+        CountryCode.append("SO")
+        
+        CountryCode.append("SJ")
+        CountryCode.append("SY")
+        CountryCode.append("TW")
+        CountryCode.append("TZ")
+        
+        CountryCode.append("TL")
+        CountryCode.append("VE")
+        CountryCode.append("VN")
+        CountryCode.append("VG")
+        
+        CountryCode.append("VI")
+        
+        
+        print(CountryCode.count)
+        
+        
+        
+        
+        
+    }
+    
 # Settings options
 
 UIApplication.shared.open(URL(string: "App-prefs:Phone")!)
