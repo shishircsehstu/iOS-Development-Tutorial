@@ -352,6 +352,59 @@ usage:
         UIApplication.shared.keyWindow!.layer.render(in: UIGraphicsGetCurrentContext()!)
         let screenshot = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
+
+
+# Contact permission request
+
+   
+    func requestAccess() {
+          switch CNContactStore.authorizationStatus(for: .contacts) {
+              
+          case .authorized:
+              fatchContacts()
+              break
+          case .denied:
+              self.givePermissionAlertForContact()
+              break
+              
+          case .restricted, .notDetermined:
+              
+              let store = CNContactStore()
+              store.requestAccess(for: .contacts) { granted, error in
+                  if granted {
+                      self.fatchContacts()
+                  } else {
+                      DispatchQueue.main.async {
+                          self.givePermissionAlertForContact()
+                      }
+                  }
+              }
+          }
+      }
+      func givePermissionAlertForContact(){
+          
+          OperationQueue.main.addOperation() {
+              
+              
+              let alert = UIAlertController(title: "Permission Required", message: "This app requires access to your contacts list to get your saved numbers. Please allow it on settings", preferredStyle: UIAlertController.Style.alert)
+              
+              alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: {(ACTION) in alert.dismiss(animated: true, completion: nil)
+                  
+                  print("No!!")
+              }))
+              
+              alert.addAction(UIAlertAction(title: "Go to Settings", style: UIAlertAction.Style.default, handler: {(ACTION) in alert.dismiss(animated: true, completion: nil)
+                  
+                  
+                  UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
+                  //  print("setting page")
+                  
+              }))
+              
+              self.present(alert,animated: true, completion: nil)
+              // return
+          }
+      }
     
 # Country Code and Calling Code
 
