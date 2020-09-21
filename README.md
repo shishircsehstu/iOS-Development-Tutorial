@@ -406,6 +406,65 @@ usage:
           }
       }
     
+    
+ # Set Button in Navigation Bar
+ 
+    func setupNavBar() {
+        
+        
+        
+        // let searchController = UISearchController(searchResultsController: nil)
+        // self.navigationItem.searchController = searchController
+        
+        rightButton.setImage(UIImage(named: "plusAdd"), for: .normal)
+        
+        //rightButton.setTitleColor(.purple, for: .normal)
+        
+        rightButton.addTarget(self, action: #selector(addBlockAction(_:)), for: .touchUpInside)
+        rightButton.contentEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 20)
+        rightButton.tag = 1
+        rightButton.frame = CGRect(x: self.view.frame.width, y: 0 , width: 50, height: 50)
+        
+        // rightButton.backgroundColor = .red
+        
+        navigationController?.navigationBar.addSubview(rightButton)
+        let targetView = self.navigationController?.navigationBar
+        
+        let trailingContraint = NSLayoutConstraint(item: rightButton, attribute:
+            .trailingMargin, relatedBy: .equal, toItem: targetView,
+                             attribute: .trailingMargin, multiplier: 1.0, constant: -16)
+        let bottomConstraint = NSLayoutConstraint(item: rightButton, attribute: .bottom, relatedBy: .equal,
+                                                  toItem: targetView, attribute: .bottom, multiplier: 1.0, constant: -6)
+        
+        rightButton.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([trailingContraint, bottomConstraint])
+        
+        
+        
+        self.navigationController?.navigationBar.isTranslucent = true
+        
+        self.navigationController?.navigationBar.barTintColor = VIEW_BG_COLOR
+        
+        navigationItem.title = "Spamlist"
+        
+        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
+        
+        
+        navigationController?.navigationBar.largeTitleTextAttributes =
+            [NSAttributedString.Key.foregroundColor: UIColor(displayP3Red: 255/255, green: 255/255, blue: 255/255, alpha: 1),
+             
+             NSAttributedString.Key.font: UIFont(name: "Poppins-Medium", size: 30) ??
+                UIFont.systemFont(ofSize: 30)]
+        
+        
+        if #available(iOS 11.0, *) {
+            navigationController?.navigationBar.prefersLargeTitles = true
+            navigationController?.navigationItem.largeTitleDisplayMode = .automatic
+        }
+        
+    }
+    
 # Country Code and Calling Code
 
 func initCountyCode()
