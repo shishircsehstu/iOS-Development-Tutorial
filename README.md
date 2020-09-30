@@ -464,6 +464,40 @@ usage:
         }
         
     }
+## set intro as rootview
+
+    func setIntroPageViewControllerAsRootViewController(){
+        
+        
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        
+        // let storyboard = UIStoryboard.init(name: "Intro", bundle: nil)
+        let viewController =  IndroFirrstViewController.init(nibName: "IndroFirrstViewController", bundle: nil) // storyboard.instantiateViewController(withIdentifier: self.getIntroIdentifier()) as!
+        let navigationController = UINavigationController.init(rootViewController: viewController)
+        navigationController.navigationBar.isHidden = true
+        
+        window.rootViewController = navigationController
+        self.window = window
+        window.makeKeyAndVisible()
+        
+    }
+    
+## set tabbar as root view
+
+    public func setTabViewControllerAsRootViewController(){
+        
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        
+        let storyBoardName = IS_DEVICE_IPAD ? "Main_iPad" : "TabBar"
+        
+        let mainViewController = UIStoryboard(name: storyBoardName, bundle: nil).instantiateViewController(withIdentifier: "TabBarViewController") as!  UITabBarController
+        
+        
+        window.rootViewController = mainViewController
+        self.window = window
+        window.makeKeyAndVisible()
+        
+    }
     
 # Country Code and Calling Code
 
