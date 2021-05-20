@@ -499,6 +499,20 @@ usage:
         
     }
     
+    
+# Completion Handler
+
+   func makeNme(originalName: String, completion: @escaping  (String?, Bool?) -> ()){
+        let newName = originalName+"_okay"
+        completion(newName,true)
+    }
+    //Usage
+      makeNme(originalName: "Xyz") { (newName, flag)  in
+            if let flag = flag{
+                print(flag)
+                print(newName!)
+            }
+        }
 # Country Code and Calling Code
 
 func initCountyCode()
