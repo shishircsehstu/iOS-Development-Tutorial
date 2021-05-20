@@ -502,7 +502,9 @@ usage:
     
 # Completion Handler
 
-   func makeNme(originalName: String, completion: @escaping  (String?, Bool?) -> ()){
+    
+    func makeNme(originalName: String, completion: @escaping  (String?, Bool?) -> ()){
+        
         let newName = originalName+"_okay"
         completion(newName,true)
     }
