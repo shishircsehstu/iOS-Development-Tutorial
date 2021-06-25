@@ -153,18 +153,18 @@ class DuplicateCollectionViewCell: UICollectionViewCell {
 
 # Json parsing 
 
-struct details: Decodable {
-    var name: String
-    var description: String
-    var courses: [allItems]
-}
-struct  allItems: Decodable {
-    var id : Int
-    var imageUrl: String
-    var link: String
-    var name: String
-    
-}
+        struct details: Decodable {
+            var name: String
+            var description: String
+            var courses: [allItems]
+        }
+        struct  allItems: Decodable {
+            var id : Int
+            var imageUrl: String
+            var link: String
+            var name: String
+
+        }
 
 class ViewController: UIViewController {
     
