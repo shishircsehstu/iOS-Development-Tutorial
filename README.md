@@ -26,6 +26,11 @@
         }) { (finish) in
             self.datePickerViewColore.frame.origin.y = DEVICE_HEIGHT
         }
+### Button Select Sound Effict
+
+        let generator = UISelectionFeedbackGenerator()
+        generator.selectionChanged()
+        
 ## Loop Animation
  
     func startAnimation()
