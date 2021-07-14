@@ -32,7 +32,29 @@
         
         let generator = UISelectionFeedbackGenerator()
         generator.selectionChanged()
+       
+### Play Video on Custom view
+
+        private func addVideoPlayer(with asset: AVAsset, playerView: UIView) {
         
+        let playerItem = AVPlayerItem(asset: asset)
+        player = AVPlayer(playerItem: playerItem)
+        /*
+        NotificationCenter.default.addObserver(self, selector: #selector(TrimViewController.itemDidFinishPlaying(_:)),
+                                               name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playerItem) */
+        
+        let layer: AVPlayerLayer = AVPlayerLayer(player: player)
+        layer.backgroundColor = UIColor.black.cgColor
+        layer.frame = CGRect(x: 0, y: 0, width: playerView.frame.width, height: playerView.frame.height)
+        
+        //print("baker test: layer frame: ", layer.frame)
+        
+        layer.videoGravity = .resizeAspect
+        playerView.layer.sublayers?.forEach({$0.removeFromSuperlayer()})
+        playerView.layer.addSublayer(layer)
+        
+        player?.play()
+      }
 ## Loop Animation
  
     func startAnimation()
